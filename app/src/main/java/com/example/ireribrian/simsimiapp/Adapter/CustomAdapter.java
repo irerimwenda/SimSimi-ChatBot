@@ -53,7 +53,7 @@ public class CustomAdapter extends BaseAdapter {
             else
                 view = layoutInflater.inflate(R.layout.list_item_chat_bot, null);
 
-            BubbleTextView text_message = (BubbleTextView) view.findViewById(R.id.text_message);
+            BubbleTextView text_message = view.findViewById(R.id.text_message);
             text_message.setText(list_chat_models.get(position).message);
         }
 

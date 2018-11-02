@@ -13,6 +13,7 @@ import com.example.ireribrian.simsimiapp.Helper.HttpDataHandler;
 import com.example.ireribrian.simsimiapp.Model.ChatModel;
 import com.example.ireribrian.simsimiapp.Model.SimSimiModel;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,10 @@ public class ChatBot extends AppCompatActivity {
         listView = (ListView)findViewById(R.id.list_of_message);
         editText = (EditText) findViewById(R.id.user_message);
         btn_send_message = (FloatingActionButton)findViewById(R.id.fab);
+
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
 
         btn_send_message.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:padding="16dp"
     tools:context="com.example.ireribrian.simsimiapp.ChatBot">
 
@@ -14,7 +15,7 @@
         android:layout_alignParentBottom="true"
         android:layout_above="@+id/fab"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:stackFromBottom="true"
         android:transcriptMode="alwaysScroll"
         android:dividerHeight="6dp"
@@ -22,9 +23,11 @@
     </ListView>
 
     <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:id="@+id/fab"
+        android:backgroundTint="#00bfa5"
+        android:layout_marginLeft="5dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:src="@drawable/ic_send"/>
